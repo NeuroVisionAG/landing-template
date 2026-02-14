@@ -1,0 +1,70 @@
+{
+    "brand": {
+        "name": "Master Template",
+        "logo": "/logo.png"
+    },
+    "sections": [
+        {
+            "id": "hero",
+            "type": "hero",
+            "title": "Build Your Next Big Thing with AI",
+            "subtitle": "The ultimate template for creators, engineers, and digital explorers. Designed for speed, beauty, and conversion.",
+            "cta": {
+                "text": "Get Started Now",
+                "link": "#pricing"
+            }
+        },
+        {
+            "id": "features",
+            "type": "features",
+            "title": "Why Choose Us",
+            "subtitle": "Discover the core advantages of our AI-driven platform.",
+            "items": [
+                {
+                    "title": "Fast Deployment",
+                    "description": "Launch your landing page in minutes, not days.",
+                    "icon": "Zap"
+                },
+                {
+                    "title": "Modern Tech",
+                    "description": "Built with Next.js 15, Tailwind CSS 4, and Framer Motion.",
+                    "icon": "Cpu"
+                },
+                {
+                    "title": "Design Ready",
+                    "description": "Beautiful out-of-the-box UI that wows your users.",
+                    "icon": "Palette"
+                }
+            ]
+        },
+        {
+            "id": "faq",
+            "type": "faq",
+            "title": "Frequently Asked Questions",
+            "subtitle": "Everything you need to know about our templates.",
+            "items": [
+                {
+                    "question": "Is this template mobile-friendly?",
+                    "answer": "Yes, it is fully responsive and works perfectly on all devices."
+                },
+                {
+                    "question": "Can I customize the colors?",
+                    "answer": "Absolutely! The template uses Tailwind CSS variables for easy customization."
+                }
+            ]
+        }
+    ],
+    "footer": {
+        "text": "© 2026 Master Template Engine. All rights reserved.",
+        "links": [
+            {
+                "text": "Terms",
+                "link": "/terms"
+            },
+            {
+                "text": "Privacy",
+                "link": "/privacy"
+            }
+        ]
+    }
+}
