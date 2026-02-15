@@ -1,70 +1,146 @@
 {
-    "brand": {
-        "name": "Master Template",
-        "logo": "/logo.png"
+  "brand": {
+    "name": "WebinarPro"
+  },
+  "sections": [
+    {
+      "id": "hero-section",
+      "type": "hero",
+      "title": "Пошаговая стратегия заработка на *нейросетях* с полного нуля",
+      "subtitle": "Освойте профессию будущего и выйдите на доход от 100.000 рублей в месяц, используя только ИИ и вайб-кодинг.",
+      "background": {
+        "type": "gradient"
+      },
+      "eventInfo": {
+        "date": "14 февраля",
+        "time": "11:00 МСК"
+      },
+      "bonus": {
+        "title": "Всем участникам",
+        "description": "Подборка из 100+ самых эффективных промптов для работы с текстом и кодом."
+      },
+      "primaryCTA": {
+        "text": "Принять участие",
+        "link": "#register"
+      },
+      "secondaryCTA": {
+        "text": "Подробнее",
+        "link": "#benefits"
+      }
     },
-    "sections": [
+    {
+      "id": "audience-section",
+      "type": "audience",
+      "title": "Для кого этот вебинар?",
+      "items": [
         {
-            "id": "hero",
-            "type": "hero",
-            "title": "Build Your Next Big Thing with AI",
-            "subtitle": "The ultimate template for creators, engineers, and digital explorers. Designed for speed, beauty, and conversion.",
-            "cta": {
-                "text": "Get Started Now",
-                "link": "#pricing"
-            }
+          "title": "Новичкам",
+          "description": "Если вы ищете способ начать зарабатывать удаленно, не тратя годы на обучение классическому программированию.",
+          "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80"
         },
         {
-            "id": "features",
-            "type": "features",
-            "title": "Why Choose Us",
-            "subtitle": "Discover the core advantages of our AI-driven platform.",
-            "items": [
-                {
-                    "title": "Fast Deployment",
-                    "description": "Launch your landing page in minutes, not days.",
-                    "icon": "Zap"
-                },
-                {
-                    "title": "Modern Tech",
-                    "description": "Built with Next.js 15, Tailwind CSS 4, and Framer Motion.",
-                    "icon": "Cpu"
-                },
-                {
-                    "title": "Design Ready",
-                    "description": "Beautiful out-of-the-box UI that wows your users.",
-                    "icon": "Palette"
-                }
-            ]
+          "title": "Фрилансерам",
+          "description": "Если вы хотите увеличить свой чек, делегировав рутину нейросетям и сократив время работы в 3-5 раз.",
+          "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80"
         },
         {
-            "id": "faq",
-            "type": "faq",
-            "title": "Frequently Asked Questions",
-            "subtitle": "Everything you need to know about our templates.",
-            "items": [
-                {
-                    "question": "Is this template mobile-friendly?",
-                    "answer": "Yes, it is fully responsive and works perfectly on all devices."
-                },
-                {
-                    "question": "Can I customize the colors?",
-                    "answer": "Absolutely! The template uses Tailwind CSS variables for easy customization."
-                }
-            ]
+          "title": "Предпринимателям",
+          "description": "Если вы ищете новые инструменты для автоматизации процессов и снижения затрат в вашем бизнесе.",
+          "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80"
         }
-    ],
-    "footer": {
-        "text": "© 2026 Master Template Engine. All rights reserved.",
-        "links": [
-            {
-                "text": "Terms",
-                "link": "/terms"
-            },
-            {
-                "text": "Privacy",
-                "link": "/privacy"
-            }
-        ]
+      ]
+    },
+    {
+      "id": "benefits-section",
+      "type": "benefits",
+      "title": "Программа интенсива",
+      "subtitle": "Всего за 1.5 часа мы разберем ключевые аспекты работы с ИИ в 2026 году",
+      "columns": 3,
+      "items": [
+        {
+          "icon": "Cpu",
+          "title": "Основы ИИ",
+          "description": "Как работают современные модели и почему сейчас — лучшее время для входа на рынок."
+        },
+        {
+          "icon": "Zap",
+          "title": "Промпт-инжиниринг",
+          "description": "Секреты создания запросов, которые дают идеальный результат с первой попытки."
+        },
+        {
+          "icon": "Code2",
+          "title": "Вайб-кодинг",
+          "description": "Создание полноценных веб-приложений без написания ни одной строчки кода вручную."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Поиск клиентов",
+          "description": "Где искать первых заказчиков и как продавать свои услуги дорого."
+        },
+        {
+          "icon": "Target",
+          "title": "Масштабирование",
+          "description": "Как превратить разовые заказы в стабильный бизнес с доходом от 300к+."
+        },
+        {
+          "icon": "Layout",
+          "title": "Кейсы и примеры",
+          "description": "Разбор реальных проектов, созданных с помощью нейросетей за считанные часы."
+        }
+      ]
+    },
+    {
+      "id": "register-section",
+      "type": "registration_cta",
+      "title": "Готовы начать свой путь?",
+      "description": "Забронируйте место на бесплатном вебинаре прямо сейчас и получите бонус сразу после регистрации.",
+      "ctaText": "Зарегистрироваться бесплатно",
+      "eventDate": "14 февраля в 11:00 МСК",
+      "bonus": {
+        "text": "100+ эффективных промптов"
+      },
+      "benefits": [
+        "Доступ к записи вебинара",
+        "Интерактивный чат с экспертами",
+        "Готовый чек-лист запуска",
+        "Специальное предложение для участников"
+      ]
+    },
+    {
+      "id": "faq-section",
+      "type": "faq",
+      "title": "Часто задаваемые вопросы",
+      "items": [
+        {
+          "question": "Нужны ли навыки программирования?",
+          "answer": "Нет, наш подход основан на использовании нейросетей (вайб-кодинг), которые берут всю техническую часть на себя."
+        },
+        {
+          "question": "Сколько времени займет обучение?",
+          "answer": "Интенсив длится около 90 минут. За это время вы получите базу, достаточную для первых шагов."
+        },
+        {
+          "question": "Будет ли запись?",
+          "answer": "Да, запись будет доступна всем зарегистрированным участникам в течение 48 часов."
+        }
+      ]
     }
+  ],
+  "footer": {
+    "text": "WebinarPro Academy",
+    "links": [
+      {
+        "text": "Политика конфиденциальности",
+        "link": "/privacy"
+      },
+      {
+        "text": "Договор оферты",
+        "link": "/terms"
+      },
+      {
+        "text": "Поддержка",
+        "link": "/support"
+      }
+    ]
+  }
 }

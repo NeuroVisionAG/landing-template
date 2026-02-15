@@ -1,8 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import * as Icons from "lucide-react";
+import {
+    HelpCircle,
+    Zap,
+    Star,
+    Heart,
+    Shield,
+    Rocket,
+    Smile,
+    Coffee,
+    LucideIcon
+} from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+
+const ICON_MAP: Record<string, LucideIcon> = {
+    HelpCircle,
+    Zap,
+    Star,
+    Heart,
+    Shield,
+    Rocket,
+    Smile,
+    Coffee
+};
 
 interface FeatureGridProps {
     title: string;
@@ -24,7 +45,7 @@ export const FeatureGrid = ({ title, subtitle, items }: FeatureGridProps) => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {items.map((item, index) => {
-                        const Icon = (Icons as any)[item.icon] || Icons.HelpCircle;
+                        const Icon = ICON_MAP[item.icon] || HelpCircle;
                         return (
                             <motion.div
                                 key={index}
