@@ -48,6 +48,7 @@ export default function Home() {
                   columns={section.columns}
                 />
               );
+            case "story":
             case "audience":
               return (
                 <InclusionCards
