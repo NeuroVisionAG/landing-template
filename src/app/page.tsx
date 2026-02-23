@@ -32,7 +32,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
             <Image
-              src="/logo.png"
+              src="/lab/logo.png"
               alt="OpenClaw Logo"
               width={40}
               height={40}
@@ -75,7 +75,7 @@ export default function Home() {
           >
             <div className="absolute inset-0 bg-crab-orange/40 blur-3xl rounded-full" />
             <Image
-              src="/logo.png"
+              src="/lab/logo.png"
               alt="OpenClaw Master Logo"
               width={160}
               height={160}
@@ -180,7 +180,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-24">
           <div className="md:col-span-5">
             <div className="flex items-center gap-4 mb-10">
-              <Image src="/logo.png" alt="Logo" width={60} height={60} className="rounded-2xl" />
+              <Image src="/lab/logo.png" alt="Logo" width={60} height={60} className="rounded-2xl" />
               <div className="text-4xl font-black tracking-tighter uppercase hero-gradient-text">
                 {landingData.brand.name}
               </div>
