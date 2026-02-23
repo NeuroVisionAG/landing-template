@@ -1,3 +1,5 @@
+"use client";
+
 import landingData from "@/config/landing.json";
 import { Header } from "@/components/blocks/Header";
 import { Hero } from "@/components/blocks/Hero";
@@ -7,6 +9,7 @@ import { InclusionCards } from "@/components/blocks/InclusionCards";
 import { GenericRegistration } from "@/components/blocks/GenericRegistration";
 import { AccordionFAQ } from "@/components/blocks/AccordionFAQ";
 import { Footer } from "@/components/blocks/Footer";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -49,6 +52,30 @@ export default function Home() {
                 />
               );
             case "story":
+              return (
+                <section key={section.id} className="py-24 px-6 bg-slate-50 overflow-hidden relative">
+                  <div className="container mx-auto max-w-4xl text-center relative z-10">
+                    <motion.h2
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      className="text-4xl md:text-6xl font-black mb-10 tracking-tighter text-slate-900"
+                    >
+                      {section.title}
+                    </motion.h2>
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ delay: 0.2 }}
+                      className="text-xl md:text-2xl text-slate-600 leading-relaxed font-medium"
+                    >
+                      {section.text}
+                    </motion.p>
+                  </div>
+                  {section.glass && (
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white/30 backdrop-blur-3xl -z-0" />
+                  )}
+                </section>
+              );
             case "audience":
               return (
                 <InclusionCards
